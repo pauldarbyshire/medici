@@ -1,0 +1,380 @@
+body {
+    margin: 0 auto; 
+    font-family: 'Poppins';
+    text-align: center;
+  }
+  
+  .logo {
+    float: left;
+  }
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #253444;
+}
+
+table {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* ~~ Top Navigation Bar ~~ */
+  
+  #navigation-container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+  }
+  
+  .navigation-bar {
+    position:fixed;
+    background-color: #E2EFFE;
+    height: 94px;
+    width: 120%;
+    text-align:center;
+  }
+
+  .navigation-bar img{
+    float:left;
+  }
+
+  .navigation-bar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display:inline-block;
+    vertical-align:top;
+  }
+  
+  .navigation-bar li {
+    list-style-type: none;
+    padding: 0px;
+    display: inline;
+  }
+  
+  .navigation-bar li a {
+    color: #2b3352;
+    font-size:14px;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 5px 15px;
+  }
+
+  .navigation-bar li a:hover {
+    color: #46BBF1;
+  }
+  
+  #menu {
+    float: right;
+  }
+
+  .title{
+    color: red;
+    font-size:34px;
+    position:fixed;
+    top:10px;
+    left:20px;
+   }
+
+  .websites{
+    color: black;
+    position:fixed;
+    left:10px;
+   }
+
+   .websites li {
+    list-style-type: none;
+    padding: 0px;
+  }
+
+  .websites li a {
+    color: #1778B5;
+    font-size:14px;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    line-height: 70px;
+    padding: 5px 15px;
+  }
+
+  .websites li a:hover {
+    color: #2b3352;
+  }
+
+  .ethereum-client {
+    color: black;
+    position:fixed;
+    margin-left: 10px;
+   }
+
+  .ethereum-client ol{
+    list-style-type: none;
+    font-size:12px;
+    display:inline;
+    text-align: left;
+   }
+
+   .contract-controls {
+        border: 2px solid #1778B5;
+        width: 10%;
+        color: #2b3352;
+        background: #E2EFFE;
+        position:fixed;
+        top:32%;
+        left:5%;
+   }
+
+   .btn-group button {
+    display: block; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    margin-left: auto;
+    margin-right: auto;
+    }
+  
+  #home {
+    height:1100px;
+    width:100%;
+    background:#fff;
+    padding-top:110px;
+    }
+	
+  #page {
+	height:1100px;
+	width:100%;
+	background:#fff;
+	padding-top:150px;
+	}
+		
+  .page-padding {
+    height:120px; 
+    width:100%;
+    }
+
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #46BBF1;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #1778B5;
+	display: inline-block;
+}
+
+.boxed {
+    border: 2px solid  #1778B5;
+    width: 34%;
+    background: #E2EFFE;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+
+.boxed p{
+    text-align: left;
+    color: #253444;
+    margin-left: 10px;
+}
+
+.capr-boxed {
+    border: 4px solid  red;
+    width: 34%;
+    background: yellow;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+
+.capr-boxed p{
+    font-size: 24pt;
+    text-align: center;
+    color: red;
+}
+
+.capr {
+    font-size: 30pt;
+    text-align: center;
+    color: red;
+}
+
+.ico-boxed {
+    border: 2px solid  #1778B5;
+    width: 50%;
+    background: #E2EFFE;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+
+  .ico-boxed ul {
+    text-align:left;
+}
+
+.ico-boxed ul.b {
+    text-align:left;
+    list-style-type: square;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+.mediumtext{
+	padding-top: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.tbxWallet{
+    font-size: 12pt;
+    padding: 4px;
+    height: 30px;
+    width: 420px;
+}
+
+.tbxEther{
+    font-size: 12pt;
+    padding: 4px;
+    height: 30px;
+    width: 100px;
+}
+
+.tbxGas{
+    font-size: 12pt;
+    padding: 4px;
+    height: 30px;
+    width: 140px;
+}
+
+.tbxTrx{
+    font-size: 12pt;
+    padding: 4px;
+    height: 30px;
+    width: 650px;
+}
+
+.tbxNumber{
+    font-size: 12pt;
+    padding: 4px;
+    height: 30px;
+    width: 60px;
+}
+
+.trxMsg{
+    font-size: 14pt;
+    color: red;
+}
+
+.btn{
+    font-size: 12pt;
+    height: 40px;
+    width: 120px;
+    background-color: #1778B5;
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #46BBF1; 
+    color: white;
+}
+
+p.caddr {
+    font-family: sans-serif;
+    font-size: 20pt;
+    color: #1778B5;
+}
+
+#currDiv{
+	font-family: sans-serif;
+	color: red;
+	display: inline-block;
+	text-align: center;
+	font-size: 34px;
+}
+
+#currDiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #1778B5;
+	display: inline-block;
+}
+
+#currDiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #46BBF1;
+	display: inline-block;
+}
+
+.table{
+    font-size: 12pt;
+}
+
+.table th{
+    color:  #1778B5;
+}
+
+.table td{
+    padding-bottom: 30px;
+}
+
+.accounts{
+    font-size: 18pt;
+}
+
+.container {
+    width: 100%;
+    font-size: 18px;
+    text-align:left;
+    color: red;
+    margin-left: 30%;
+    margin-top: 40px;
+}
+  
+.left {
+    font-weight: bold;
+    width: 10%;
+    float: left;
+}
+
+.right {
+    width: 10%;
+    float: left;
+}
+
+.glossary{
+    text-align:left;
+    margin-left: 26%;
+    margin-right: 26%;
+    font-size: 18px;
+}
+
+dt {
+    display: block;
+    font-weight: bold;
+}
+

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Test Platform</title>
+</head>
+<body>
+    <div class="navigation-bar">
+        <div id="navigation-container">
+        <img class="logo" src="media/medici_logo.png">
+            <ul>
+                <li><a href="#tokenSale">TOKEN SALE</a></li>
+                <li><a href="#details">DETAILS</a></li>
+                <li><a href="#testAccounts">ACCOUNTS</a></li>
+                <li><a href="#buyTokens">BUY TOKENS</a></li>
+                <!--<li><a href="#sendMED">SEND TOKENS</a></li>-->
+                <li><a href="#sendEther">SEND ETH</a></li>
+                <li><a href="#testTrxs">TRXS</a></li>
+                <li><a href="#testBlcks">BLOCKS</a></li>
+                <li><a href="#database">DATABASE</a></li>
+                <li><a href="#glossary">?</a></li>
+            </ul>
+        </div>
+        <div class="websites">
+            <li><a href="https://ethstats.net/">Ethereum Stats</a></li>
+            <li><a href="https://etherscan.io/">Etherscan</a></li>
+            <li><a href="https://etherchain.org/">Ether Chain</a></li>
+            <li><a href="https://tokenmarket.net/ethereum-address-validator">Addr. Valid.</a></li>
+            <li><a href="https://ethgasstation.info/">Gas Station</a></li>
+            <li><a href="https://etherscan.io/ether-mining-calculator/">Mining Calc.</a></li>
+            <li><a href="https://www.coindesk.com/price/">XRate</a></li>
+        </div>
+    </div>
+    <div class="ethereum-client"> 
+        <ol>
+            <li id="network"></li>
+            <li id="lblock"></li>
+            <li id="ltstamp"></li>
+        </ol>
+    </div>
+    <div id="home">
+        <a name="tokenSale"></a>
+        <div class="page-padding"></div>
+        <h1>Pre-ICO Token Sale</h1>
+        <div id="script"></div>
+        <div id="clockdiv">
+            <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+            </div>
+            <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+            </div>
+            <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+            </div>
+        </div>
+        <br><br>
+        <!--<div class="capr-boxed">
+            <p class=capr" id="capReached"></p>
+        </div>-->
+        <p class="capr" id="capReached"></p>
+        <h2>Contract Address</h2>
+        <p class="caddr" id="contractAddress"></p>
+        <div id="currDiv">
+            <div>
+                <span id="totalETHRaised"></span>
+                <div class="mediumtext">ETH Raised</div>
+            </div>
+            <div>
+                <span id="totalMDISold"></span>
+                <div class="mediumtext">MDI Sold</div>
+            </div>
+        </div>
+        <p></p>
+        <div id="currDiv">
+            <div>
+                <span id="totalUSDRaised"></span>
+                <div class="mediumtext">$USD</div>
+            </div>
+        </div>
+    </div> <!--END page 1-->
+        
+    <div id="page">
+        <a name="details"></a>
+            <div class="page-padding"></div>
+            <h1>Pre-ICO Details</h1>
+            <div class="ico-boxed">
+                <table class="table">
+                    <tr>
+                        <th>Start date</th>
+                        <th></th>
+                        <th>End date</th>
+                    </tr>
+                    <tr>
+                        <td id="startDate"></td>
+                        <td></td>
+                        <td id="endDate"></td>
+                    </tr>
+                    <tr>
+                        <th>Value</th>
+                        <th>Rate (+60% bonus)</th>
+                        <th>Soft cap</th>
+                    </tr>
+                    <tr>
+                        <td id="USDValue"></td>
+                        <td id="tokensPerETHWithBonus"></td>
+                        <td id="softCap"></td>
+                    </tr>
+                    <tr>
+                        <th>Token supply</th>
+                        <th></th>
+                        <th>Tokens for sale</th>
+                    </tr>
+                    <tr>
+                        <td id="tokensMintable"></td>
+                        <td></td>
+                        <td id="tokensForSale"></td>
+                    </tr>
+                    <tr>
+                        <th>Stake Rewards</th>
+                        <th>Founders</th>
+                        <th>Advisers</th>
+                    </tr>
+                    <tr>
+                        <td id="tokensForStakeRewards"></td>
+                        <td id="tokensForFounders"></td>
+                        <td id="tokensForAdvisers"></td>
+                    </tr>
+                    <tr>
+                        <th>Marketing</th>
+                        <th>Development</th>
+                        <th>Airdrops</th>
+                    </tr>
+                    <tr>
+                        <td id="tokensForMarketing"></td>
+                        <td id="tokensForDevelopment"></td>
+                        <td id="tokensForAirdrops"></td>
+                    </tr>
+                </table>   
+            </div>   
+            <p></p>
+            <div class="ico-boxed">
+                <p><b>Terms &amp; Conditions</b></p>
+                <ul>
+                    <li>Medici Tokens will be based on the ERC20 standard and issued as 'Medici'.</li>
+                    <li>The symbol for the Medici Token is MDI.</li>
+                    <li>Payment for tokens will be accepted in Bitcoin (BTC), Ether (ETH), Pounds Sterling and US Dollars. </li>
+                    <li>Precise prices for BTC and ETH will be announced no later than 48 hours before the sale opens and will be subsequently reviewed on a daily basis. </li>
+                    <li>All deposits received in either Bitcoin or Ether will be held in a corporate grade BitGo wallet with multi-signature authentication.</li>
+                    <li>All tokens purchased during the Pre-ICO will only be supplied upon receipt of cleared funds. </li>
+                </ul>
+            </div>     
+        </div>
+    </div> <!--END page 2-->
+
+    <div id="page">
+        <a name="testAccounts"></a>
+        <div class="page-padding"></div>
+        <h1>Accounts</h1>
+        <div class="boxed">
+            <p>
+                The following 10 <b>Test Accounts</b> are all pre-loaded with <b>100 ETH</b> each.
+            </p>
+        </div>
+        <p class="accounts" id="accounts"></p>
+    </div> <!--END page 3-->
+
+    <div id="page">
+        <div class="contract-controls">
+            <p ><b>Contract Controls</b></p>
+            <div class="btn-group">
+                <button class="btn" onClick="hitSoftcap()" id='snglButton'>Hit Softcap</button>
+                <button class="btn" onClick="finishEarly()" id='snglButton'>Finish Early</button>
+                <button class="btn" onClick="killContract()" id='snglButton'>KIll Contract</button>
+                <button class="btn" onClick="getBytecode()" id='snglButton'>Bytecode</button>
+            </div> 
+        </div>
+        <a name="buyTokens"></a> 
+        <div class="page-padding"></div>
+        <h1>Buy Tokens</h1>
+        <h2>Single Transaction</h2>
+        <div class="boxed">
+            <p>
+                To buy <b>Medici Tokens</b> you must send an amount of <b>ETH</b> from a <b>Test Account</b> to the <b>Contract Address</b>. 
+                The <b>Contract Address</b> is automatically included in the transaction.
+            </p>
+        </div>
+        <br>
+        <input class="tbxWallet" type="text" id="wallet" placeholder=" From: 0xe5b44daa1f4bbb6dae3cb0698f20f89a16160c84">
+        <input class="tbxEther" type="text" id="ether" placeholder=" ETH e.g., 20">
+        <input class="tbxGas" type="text" id="gas" value="1000000" placeholder=" Gas e.g., 1000000">
+        <button class="btn" onClick="buyTokens()" id='snglButton'>Send</button>
+        <p class="trxMsg" id='trxMsg'></p>
+        <h2>Volume Transactions</h2>
+        <div class="boxed">
+            <p>
+                Each Transaction uses a random <b>Test Account</b> and amount of <b>ETH</b> to send. 
+            </p>
+        </div>
+        <br>
+        <input class="tbxNumber" type="text" id="number" placeholder=" e.g., 20">
+        <button class="btn" onClick="buyTokens()" id='volButton'>Send</button>
+        <p class="trxMsg" id='volMsg'></p>
+        <input class="tbxWallet" type="text" id="beneficiary" placeholder=" From: 0xe5b44daa1f4bbb6dae3cb0698f20f89a16160c84">
+    </div>
+
+    <div id="page">
+        <a name="sendEther"></a> 
+        <div class="page-padding"></div>
+        <h1>Send ETH</h1>
+        <div class="boxed">
+            <p>
+                Send an amount of <b>ETH</b> from a <b>Test Account</b> to another <b>Test Account</b>. 
+            </p>
+        </div>
+        <br>
+        <input class="tbxWallet" type="text" id="from" placeholder=" From: 0x350f1fd103faf3cb3732ed33bf4dc05df442571f">
+        <input class="tbxWallet" type="text" id="to" placeholder=" To: 0x4e202de7728c1500eb18195793394235fc7dc1aa">
+        <input class="tbxEther" type="text" id="sether" placeholder=" ETH e.g., 20">
+        <input class="tbxGas" type="text" id="sgas" value="1000000" placeholder=" Gas e.g., 1000000">
+        <button class="btn" onClick="sendETH()" id='sendButton'>Send</button>
+        <p class="trxMsg" id='sethMsg'></p>
+    </div> <!--END page 5-->
+       
+    <div id="page">
+        <a name="testTrxs"></a> 
+        <div class="page-padding"></div>
+        <h1>TRANSACTION REQUESTS</h1>
+        <div class="boxed">
+            <p>
+                Request <b>Transaction Details</b> for a particular <b>Transaction</b> using the <b>Transaction Hash</b>.
+            </p>
+        </div>
+        <br>
+        <input class="tbxTrx" type="text" id="trxHash" placeholder=" e.g., 0x28582a771475bad08cd73bd43cc6a4112503a88c4bdeeec6577970b11e64703d">
+        <button class="btn" onClick="list(trxHeading, 'trxHeadings'), list(getTransactionDetails(), 'trxDetails')" id='button'>Get Details</button>
+        <div class='container'>
+            <div class="left" id="trxHeadings"></div>
+            <div class="right" id="trxDetails"></div>
+        </div>
+        <div class="boxed">
+            <p>
+                Request <b>Transactions</b> for a particular <b>Test Account</b> using the <b>Address</b>.
+            </p>
+        </div>
+        <br>
+        <input class="tbxWallet" type="text" id="trxAccount" placeholder=" e.g., 0x350f1fd103faf3cb3732ed33bf4dc05df442571f">
+        <input class="tbxEther" type="text" id="startBlock" placeholder=" From: ">
+        <input class="tbxEther" type="text" id="endBlock" placeholder=" To: ">
+        <button class="btn" onClick="getTransactionsByAccount()" id='button'>Get Trxs</button>
+        <div class='container'>
+            <div class="left" id="trxHeadings"></div>
+            <div class="right" id="trxDetails"></div>
+        </div>
+    </div> <!--END page 6-->
+    <div id="page">
+        <a name="testBlcks"></a> 
+        <div class="page-padding"></div>
+        <h1>BLOCK REQUEST</h1>
+        <div class="boxed">
+            <p>
+                    Request <b>Transaction</b> information from the Ethereum Test blockchain on a particular <b>Block</b> using the <b>Block Number</b>.
+            </p>
+        </div>
+        <br>
+        <input class="tbxEther" type="text" id="blck" placeholder=" e.g., 56472">
+        <button class="btn" onClick="list(blckHeading, 'blckHeadings'), list(getBlockDetails(), 'blckDetails')" id='button'>Get</button>
+        <div class='container'>
+            <div class="left" id="blckHeadings"></div>
+            <div class="right" id="blckDetails"></div>
+        </div>
+    </div> <!--END page 7-->
+
+    <div id="page">
+        <a name="database"></a> 
+        <div class="page-padding"></div>
+        <h1>DATABASE</h1>
+        <button class="btn" onClick="conn()" id='button'>Connect</button>
+    </div> <!--END page 8-->
+
+    <div id="page">
+        <a name="glossary"></a> 
+        <div class="page-padding"></div>
+        <h1>GLOSSARY</h1>
+        <div class="glossary">
+            <dl>
+                <dt>Blockchain</dt>
+                <dd>is a continuously growing list of records, called blocks, which are linked and secured using cryptography. Each block typically contains a cryptographic hash of the previous block, a timestamp, and transaction data. By design, a blockchain is resistant to modification of the data. It is "an open, distributed ledger that can record transactions between two parties efficiently and in a verifiable and permanent way.</dd>
+                <dt>Block Hash</dt>
+                <dd>hash of the block where the transaction was in (32-byte).</dd>
+                <dt>Block Number</dt>
+                <dd>block number where the transaction was in.</dd>
+                <dt>Difficulty</dt>
+                <dd>integer of the difficulty for the block.</dd>
+                <dt>Extra Data</dt>
+                <dd>The 'extra data' field of the block.</dd>
+                <dt>From:</dt>
+                <dd>the address the transaction is sent from (20-bytes)</dd>
+                <dt>Nonce (Account)</dt>
+                <dd>the number of transactions made by the sender prior to this one.</dd>
+                <dt>Nonce (PoW)</dt>
+                <dd>hash of the generated PoW (8-bytes) i.e., the random value in a block that was used get the PoW satisfied.</dd>
+                <dt>Gas</dt>
+                <dd>gas provided by the sender.</dd>
+                <dt>Gas Limit</dt>
+                <dd>maximum gas allowed in the block.</dd>
+                <dt>Gas Price</dt>
+                <dd>gas price provided by the sender in Wei.</dd>
+                <dt>Gas Used</dt>
+                <dd>total used gas by all transactions in the block.</dd>
+                <dt>Hash</dt>
+                <dd>hash of the transaction (32-byte).</dd>
+                <dt>Hashing</dt>
+                <dd>means taking an input string of any length and giving out an output of a fixed length. In the context of cryptocurrencies like Ether, the transactions are taken as an input and run through a hashing algorithm (Ethereum uses KECCAK-256 i.e., SHA-256) which gives an output of a fixed length.
+                    Hashing is used to index and retrieve items in a database because it is faster to find the item using the shorter hashed key than to find it using the original value.
+                    A hash is not ‘encryption’ i.e., it cannot be decrypted back to the original text (it is a ‘one-way’ cryptographic function, and is a fixed size for any size of source text). This makes it suitable when it is appropriate to compare ‘hashed’ versions of texts, as opposed to decrypting the text to obtain the original version.
+                </dd>
+                <dt>Index</dt>
+                <dd>integer of the transactions index position in the block.</dd>
+                <dt>Input</dt>
+                <dd>the data sent along with the transaction.</dd>
+                <dt>Miner</dt>
+                <dd>The address of the beneficiary to whom the mining rewards were given.</dd>
+                <dt>Miners</dt>
+                <dd>For each block of transactions, miners use computers to repeatedly and very quickly guess answers to a puzzle until one of them wins.
+                    More specifically, the miners will run the block's unique header metadata (including timestamp and software version) through a hash function (which will return a fixed-length, scrambled string of numbers and letters that looks random), only changing the 'nonce value', which impacts the resulting hash value.
+                    If the miner finds a hash that matches the current target, the miner will be awarded ether and broadcast the block across the network for each node to validate and add to their own copy of the ledger. If miner B finds the hash, miner A will stop work on the current block and repeat the process for the next block.
+                    Ethereum might not need miners forever, though. Developers plan to ditch Proof-of-Work (PoW), the algorithm that the network currently uses to determine which transactions are valid and protect it from tampering, in favor of Proof-of-Stake (PoS), where the network is secured by the owners of tokens.
+                    If and when that algorithm is rolled out, PoS could be a means for achieving distributed consensus that uses fewer resources. 
+                    It is very difficult for miners to cheat at this game. There is no way to fake this work and come away with the correct puzzle answer. Thaat is why the puzzle-solving method is called 'proof-of-work'.
+                </dd>
+                <dt>Parent Hash</dt>
+                <dd>hash of the parent block (32-bytes)</dd>
+                <dt>Secure Hashing Algorithm</dt>
+                <dd>the SHA was developed by the National Security Agency (NSA) as part of the Digital Signature Program.
+                    SHA-256 generates an almost-unique 256-bit (32-byte) signature for a piece of text. SHA3 is the latest member of the SHA family of algortihms.
+                </dd>
+                <dt>SHA3 Uncles</dt>
+                <dd>SHA3 of the uncles data in the block (32-bytes).</dd>
+                <dt>Size</dt>
+                <dd>integer of the size of this block in bytes.</dd>
+                <dt>Smart Contract</dt>
+                <dd>A smart contract is a computer program intended to digitally facilitate, verify, or enforce the negotiation or performance of a contract. Smart contracts allow the performance of credible transactions without third parties. These transactions are trackable and irreversible.
+                    The aim of smart contracts is to provide security that is superior to traditional contract law and to reduce other transaction costs associated with contracting. 
+                </dd>
+                <dt>State Root</dt>
+                <dd>root of the final state trie of the block (32-bytes).</dd>
+                <dt>Timestamp</dt>
+                <dd>the unix timestamp for when the block was collated.</dd>
+                <dt>To:</dt>
+                <dd>the address the transaction is sent to (20-bytes)</dd>
+                <dt>Total Difficulty</dt>
+                <dd>integer of the total difficulty of the chain until a particular block.</dd>
+                <dt>Transactions</dt>
+                <dd>array of transaction hashes (32-bytes).</dd>
+                <dt>Trustless Service</dt>
+                <dd>Ethereum platform is special in that the smart contracts enable trustless services that obviate the need for trusted third parties in a currency exchange transaction, i.e., disintermediate currency exchange businesses.</dd>
+                <dt>Uncles</dt>
+                <dd>are commonly associated with the Ethereum blockchain and are the equivalent of orphan blocks, but with a slight difference. Uncle blocks are still valid blocks that were mined, but  then rejected. However, unlike with an orphan block (Bitcoin) where miners are not rewarded for mining them, miners are in fact rewarded for mining an uncle block. </dd>
+                <dt>Value</dt>
+                <dd>value transferred in Wei.</dd>
+                <dt>Wei</dt>
+                <dd>Ethereum has a metric system of denominations used as units of ether. The smallest denomination (or base unit) of ether is called Wei.</dd>
+               
+              </dl>
+        </div>
+    </div> <!--END page 9-->
+   
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/ethereum/web3.js/0.19.0/dist/web3.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/transactions.js"></script>
+    <!--<script src="js/dbase.js"></script>-->
+    <script src="js/app.js"></script>
+    <script src="js/utils.js"></script>
+
+    <script>
+        tabulate(checkAllBalances(), 'accounts');  
+    </script>
+    <script>
+        var trxHeading = new Array("Trx Hash", "Nonce", "Block Hash", "Block No.",
+                                    "Trx Index", "Contract Addr.", "From", "To",
+                                    "Value", "Gas Price", "Gas", "Gas Used", "Input");
+        var blckHeading = new Array("Hash", "Parent Hash", "Nonce", "SHA3 Uncles", 
+                            "State Root", "Miner", "Difficulty",
+                            "Total Diff.", "Extra Data", "Size",
+                            "Gas Limit", "Gas Used", "Timestamp", "Trxs");                
+    </script>
+    </body>
+</html>
